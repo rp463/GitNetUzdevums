@@ -32,8 +32,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GroupBoxRPakalns = new System.Windows.Forms.GroupBox();
+            this.ButtonRPakalns = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.GroupBoxRPakalns.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -75,17 +78,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Andrejs Liepiņš";
             // 
+            // GroupBoxRPakalns
+            // 
+            this.GroupBoxRPakalns.Controls.Add(this.ButtonRPakalns);
+            this.GroupBoxRPakalns.Location = new System.Drawing.Point(272, 274);
+            this.GroupBoxRPakalns.Name = "GroupBoxRPakalns";
+            this.GroupBoxRPakalns.Size = new System.Drawing.Size(123, 54);
+            this.GroupBoxRPakalns.TabIndex = 4;
+            this.GroupBoxRPakalns.TabStop = false;
+            this.GroupBoxRPakalns.Text = "Roberts Pakalns";
+            // 
+            // ButtonRPakalns
+            // 
+            this.ButtonRPakalns.Location = new System.Drawing.Point(15, 19);
+            this.ButtonRPakalns.Name = "ButtonRPakalns";
+            this.ButtonRPakalns.Size = new System.Drawing.Size(75, 23);
+            this.ButtonRPakalns.TabIndex = 0;
+            this.ButtonRPakalns.Text = "y=2^x";
+            this.ButtonRPakalns.UseVisualStyleBackColor = true;
+            this.ButtonRPakalns.Click += new System.EventHandler(this.ButtonRPakalns_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 415);
+            this.Controls.Add(this.GroupBoxRPakalns);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Funkciju grafiki";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.GroupBoxRPakalns.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -96,6 +121,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GroupBoxRPakalns;
+        private System.Windows.Forms.Button ButtonRPakalns;
     }
 }
 
